@@ -1,24 +1,12 @@
 # makebitcoinachhaltig
+####Eine Abgabe im Modul "Bits und Bäume" bei Frau. Dr. Mandorf von Christopher Brumm.
 
-## Project setup
+## Projekt setup
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+## Ausliefern der Website
 ```
 yarn serve
 ```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

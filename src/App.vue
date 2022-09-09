@@ -40,7 +40,7 @@
           </q-circular-progress>
           <q-icon class="q-ma-md" name="info" size="26px" outlined>
             <q-tooltip>
-              Abgerufen am 31. August 2022
+              Abgerufen am 8. September 2022
             </q-tooltip>
           </q-icon>
           <br>
@@ -50,9 +50,9 @@
     </div>
 
     <div class="row justify-center items-center q-mt-lg" v-if="model === 'two'">
-    <q-card dark class="my-card" style="width: 80%">
+      <q-card dark class="my-card" style="width: 80%">
 
-      <q-card-section class="row justify-center items-center q-mt-lg">
+        <q-card-section class="row justify-center items-center q-mt-lg">
           <q-circular-progress
               show-value
               font-size="20px"
@@ -67,7 +67,7 @@
           </q-circular-progress>
           <q-icon class="q-ma-md" name="info" size="26px" outlined>
             <q-tooltip>
-              Abgerufen am 31. August 2022
+              Abgerufen am 8. September 2022
             </q-tooltip>
           </q-icon>
           <br>
@@ -130,7 +130,7 @@
                   <q-icon name="electric_bolt" size="56px" />
                 </q-card-section>
                 <q-card-section class="q-pt-none">
-                  <h6 class="text-green-6" style="margin: 2px">95%</h6>
+                  <h6 class="text-green-6" style="margin: 2px">99,95%</h6>
                   des aktuellen Stromverbrauchs eingespart werden.
                 </q-card-section>
               </q-card>
@@ -166,11 +166,11 @@
     <div class="row justify-center items-center q-mt-lg">
       <q-card dark class="bg-dark rounded my-card" style="width: 80%">
         <q-card-section class="row justify-center q-mt-lg">
-            <div class="col q-mr-md" v-if="model === 'one'">
-              <h5 style="margin: 0px">Aktueller Energieverbrauch</h5>
-              <small>Unter Verwendung der klassischen
-                Proof-of-Work-Blockchain.</small>
-            </div>
+          <div class="col q-mr-md" v-if="model === 'one'">
+            <h5 style="margin: 0px">Aktueller Energieverbrauch</h5>
+            <small>Unter Verwendung der klassischen
+              Proof-of-Work-Blockchain.</small>
+          </div>
           <div class="col" v-if="model === 'two'">
             <h5 style="margin: 0px">Alternativer Energieverbrauch</h5>
             <small>Unter Verwendung einer alternativen
@@ -234,11 +234,16 @@
         </q-card-section>
       </q-card>
     </div>
-<br>
+    <br>
     <div class="row justify-center items-center q-mt-lg">
       <q-card dark class="bg-dark rounded my-card" style="width: 80%">
         <q-card-section class="row q-ma-sm">
-          <h5 style="margin: 0">Wieso ist der Bitcoin nicht nachhaltig?</h5>
+          <h5 style="margin-top: 0; margin-bottom: 6px">Wieso ist der Bitcoin nicht nachhaltig?</h5>
+          <span>
+            Die Energieintensität des Bitcoin-Minings ist eine Eigenschaft, kein Fehler. Das Mining bezeichnet den automatisierten Prozess der Validierung von Bitcoin-Transaktionen ohne das Eingreifen von vertrauenswürdigen Dritten wie Banken. Die Art und Weise, wie der Prozess der Transaktionsvalidierung konzipiert ist, verbraucht große Mengen an Energie - das Netzwerk hängt von der Rechenleistung tausender Miner ab. Die Begründung für diesen Energieaufwand liegt in der Implementierung des Bitcoins unter Verwendung des Proof-Of-Work Konzepts zur Konsensfindung.
+            <br><br>Proof-of-Work ist ein Wettbewerb zwischen Minern, die kryptografische Rätsel lösen und Transaktionen validieren, um Belohnungen zu erhalten. Dabei versuchen alle Miner des Netzwerks gleichzeitig dieses Rätsel zu lösen, wobei nur der erste Miner mit dem richtigen Ergebnis dafür belohnt wird. Ist diese Lösung gefunden, wird ein neues Rätsel gestellt und die Jagd nach dem richtigen Ergebnis startet erneut. Proof-of-Work erfordert dabei eine erhebliche Menge an Energie, um Transaktionen zu überprüfen. Da die Computer im Netzwerk viel Energie verbrauchen und viel arbeiten müssen, ist die Blockchain weniger umweltfreundlich als andere Konzepte zur Konsensfindung.
+            <br><br>Es gibt keine direkte Möglichkeit zu berechnen, wie viel Energie für das Mining von Bitcoin wirklich verbraucht wird, aber die Zahl kann anhand der Hash-Rate des Netzwerks und des Verbrauchs von kommerziell erhältlichen Mining-Geräten geschätzt werden. Der Cambridge Bitcoin Electricity Consumption Index schätzt, dass Bitcoin, das am häufigsten geschürfte Kryptowährungsnetzwerk, schätzungsweise 85 Terawattstunden (TWh) Strom (0,38 % des weltweiten Stromverbrauchs) und etwa 218 TWh Energie (0,13 % der weltweiten Energieproduktion) zum Zeitpunkt der Produktion verbraucht hat - mehr als Belgien und Finnland, wenn man die neuesten Energieschätzungen der Länder aus dem Jahr 2019 zugrunde legt (siehe University of Cambridge, Cambridge Centre for Alternative Finance. "Cambridge Bitcoin Electricity Consumption Index: Comparisons, https://ccaf.io/cbeci/index/comparisons.").
+          </span>
         </q-card-section>
       </q-card>
     </div>
@@ -246,15 +251,21 @@
     <div class="row justify-center items-center q-mt-lg">
       <q-card dark class="bg-dark rounded my-card" style="width: 80%">
         <q-card-section class="row q-ma-sm">
-          <h5 style="margin: 0">Wie kann man den Bitcoin nachhaltiger gestalten?</h5>
+          <h5 style="margin-top: 0; margin-bottom: 6px">Wie kann man den Bitcoin nachhaltiger gestalten?</h5>
+          <span>
+            Neben verschiedenen Ansätzen, den Bitcoin nachhaltiger zu gestalten, wird in diesem Beitrag die alternative Implementierung zur Konsensfindung unter Verwendung des Proof-Of-Stake Konzepts beleuchtet.
+<br><br>Das Proof-of-Stake Konzept ermöglicht den Besitzern einer Kryptowährung, Coins zu staken und ihre eigenen Validierungsknoten zu erstellen. Beim Staking werden Coins der Teilnehmer verpfändet, um sie für die Verifizierung von Transaktionen zu verwenden. Wenn ein Block von Transaktionen zur Verarbeitung bereit ist, wählt das Proof-of-Stake-Protokoll der Kryptowährung einen Validierungsknoten, der den Block überprüft. Der Validator prüft, ob die Transaktionen im Block korrekt sind. Wenn ja, fügt er den Block zur Blockchain hinzu und erhält für seinen Beitrag eine Krypto-Belohnung. Wenn ein Validator jedoch vorschlägt, einen Block mit ungenauen Informationen hinzuzufügen, verliert er als Strafe einen Teil seines Einsatzes.
+<br><br>Im Vergleich zur Proof-Of-Work Konsensfindung findet beim Proof-Of-Stake kein Wettbewerb zwischen den Minern/Validatoren statt. Mit Blick auf den Energieverbrauch des Netzwerks hat diese marginale Änderung einen enormen Einfluss, da zur Konsensfindung nicht mehr die Rechenleistung aller Teilnehmer benötigt wird. Laut Ethereum Foundation kann die Einsparung durch die Änderung von Proof-Of-Work zur Proof-Of-Stake Konsensfindung für eine Stromeinsparung von ungefähr 99,95% sorgen (https://blog.ethereum.org/2021/05/18/country-power-no-more).
+<br><br>Um den Bitcoin auf diese Weise nachhaltiger zu gestalten, müssen im ersten Schritt die Teilnehmer von der alternativen Implementierung überzeugt werden. Diese Website dient dazu, auf die Problemstellung in Form des enormen Energieverbrauchs des Bitcoin aufmerksam zu machen und eine effizientere, nachhaltige Möglichkeit vorzustellen. Für den Erfolg des ersten Schrittes ist insbesondere die Aufmerksamkeit von möglichst vielen Teilnehmern des Bitcoin-Netzwerks notwendig, weshalb das Teilen dieser Website eine große Hilfe darstellt. Im zweiten Schritt sollten konkretere Lösungsvorschläge und sogar mögliche Implementierungen der nachhaltigen Alternative des Bitcoins zusammengetragen werden, um diese zielführend voranzutreiben. Diese werden in den kommenden Wochen auch auf dieser Website zusammengetragen. Bis dahin sind im unteren Link weitere Quellen zur tieferen Auseinandersetzung mit dem Thema zu finden.
+
+          </span>
         </q-card-section>
       </q-card>
     </div>
     <div>
       <q-tabs no-caps active-color="grey-9" indicator-color="transparent" class="text-white q-mt-lg" v-model="tab">
         <q-tab name="images" label="Impressum" />
-        <q-tab name="videos" label="Quellen" />
-        <q-tab name="articles" label="Grafiken" />
+        <q-tab name="videos" label="Weitere Quellen" />
       </q-tabs>
     </div>
   </div>
@@ -268,6 +279,9 @@ const options = [
   {label: 'Aktuell', value: 'one'},
   {label: 'Alternativ', value: 'two'}
 ]
+
+const date = new Date();
+date.setDate(date.getDate() - 2);
 
 const btcData = ref(null);
 const btcCo2 = ref(null);
@@ -311,7 +325,7 @@ export default {
     async function getData() {
       try {
         const response = await axios.get(
-            "https://digiconomist.net/wp-json/mo/v1/bitcoin/stats/20220827"
+            `https://digiconomist.net/wp-json/mo/v1/bitcoin/stats/20220908`
         );
         // JSON responses are automatically parsed.
         btcData.value = response.data[0]["24hr_kWh"];
@@ -325,7 +339,7 @@ export default {
         altbtcOutCo2.value = (btcOutCo2.value * 0.005).toString();
 
         percentage.value = (Number(btcData.value) / 922739726 * 100).toFixed(2);
-        altpercentage.value = (Number(btcData.value) / 922739726 * 100 * 0.02).toFixed(2);
+        altpercentage.value = (Number(btcData.value) / 922739726 * 100 * 0.005).toFixed(2);
 
         cardContent.value[0].consumption = (btcData.value / 3106).toFixed(0).toString();
         cardContent.value[1].consumption = (btcData.value / 2250).toFixed(0).toString();
